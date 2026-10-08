@@ -42,7 +42,7 @@ ORDER BY
 LIMIT 10;
 ```
 **Key Finding:** Top-paying Data Scientist positions frequently exceed $250,000–$350,000+ per year, often concentrated in specialized machine learning, AI, and big-data roles.
-![Top Paying Roles](assets\1_top_paying_roles.png)
+![Top Paying Roles](assets/1_top_paying_roles.png)
 *Bar graph visualising the salary for the top 10 salaries for data scientists; Google gemini generated this graph from my SQL query results*
 ### 2. Skills for Top-Paying Jobs
 ​Using a CTE to isolate the skills requested across those top 10 highest-paying roles:
@@ -73,7 +73,7 @@ INNER JOIN skills_dim ON skills_job_dim.skill_id = skills_dim.skill_id
 ORDER BY salary_year_avg DESC;
 ```
 **Key Finding:** Python, AWS, PyTorch, and SQL dominate the top compensation tiers, showing that elite compensation goes to roles bridging analytical modeling and cloud production.
-![Top Paying Skills](assets\2_top_paying_roles_skills.png)
+![Top Paying Skills](assets/2_top_paying_roles_skills.png)
 *Bar graph visualizing the count of skills for the top 10 paying jobs for data scientists; Google gemini generated this graph from my SQL query results*
 ### ​3. Most In-Demand Skills for Data Scientists
 ​Aggregating mentions across all remote Data Scientist postings to measure overall market demand:
@@ -93,7 +93,7 @@ ORDER BY
     demand_count DESC
 LIMIT 10;
 ```
-![Top Paying Skills](assets\3_top_paying_skills.png)
+![Top Paying Skills](assets/3_top_paying_skills.png)
 *Bar graph visualising the top demanded skills for data scientists based
 on the job postings data of 2023; Gemini generated this graph from my SQL query results*
 ### ​4. Top-Paying Skills
